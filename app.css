@@ -1,0 +1,137 @@
+body {
+  background-color: #eaeaea;
+  color: #333;
+  font-family: "Righteous", sans-serif;
+}
+
+body.dark-mode {
+  background-color: #222;
+  color: #fff;
+}
+
+.dark-mode-switch {
+  cursor: pointer;
+  font-family: monospace;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.container .dark-mode-switch {
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 0.8rem;
+}
+
+.row {
+  display: flex;
+}
+
+#playSimon {
+  padding: 10px;
+  color: #fff;
+}
+
+h1 {
+  margin-bottom: 0;
+  padding-top: 20px;
+  text-transform: uppercase;
+}
+
+p.level {
+  margin-top: 4px;
+  margin-bottom: 3rem;
+  font-size: 1.1rem;
+}
+
+.game-buttons-container {
+  background-color: #444;
+  border-radius: 100%;
+  position: relative;
+  opacity: 0.7;
+}
+.game-buttons-container #playSimon {
+  width: 100px;
+  height: 100px;
+  background-color: #444;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  opacity: 1;
+}
+@media screen and (max-width: 700px) {
+  .game-buttons-container #playSimon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.2rem;
+  }
+}
+
+.gamebutton {
+  width: 200px;
+  height: 200px;
+  border: 10px solid #444;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+@media screen and (max-width: 700px) {
+  .gamebutton {
+    width: 140px;
+    height: 140px;
+  }
+}
+.gamebutton.disabled {
+  pointer-events: none;
+}
+.gamebutton.top.left {
+  background-color: #228022;
+  border-top-left-radius: 100%;
+}
+.gamebutton.top.right {
+  background-color: #FF4040;
+  border-top-right-radius: 100%;
+}
+.gamebutton.bottom.left {
+  background-color: #FFFF45;
+  border-bottom-left-radius: 100%;
+}
+.gamebutton.bottom.right {
+  background-color: #4545FF;
+  border-bottom-right-radius: 100%;
+}
+.gamebutton.top {
+  border-bottom-width: 5px;
+}
+.gamebutton.bottom {
+  border-top-width: 5px;
+}
+.gamebutton.left {
+  border-right-width: 5px;
+}
+.gamebutton.right {
+  border-left-width: 5px;
+}
+.gamebutton.clicked {
+  opacity: 0.5;
+  transition: opacity 300ms, box-shadow 300ms;
+  box-shadow: inset 0 0 25px 10px rgba(255, 255, 255, 0.9);
+}
+
+/*# sourceMappingURL=app.css.map */

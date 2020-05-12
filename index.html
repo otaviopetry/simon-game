@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="app.css">
+
+    <title>otavio's Simon Game - Angela Yu's Web Dev Bootcamp</title>
+</head>
+<body>
+    
+
+    <div class="container">
+        <h1>Simon</h1>
+        <p class="level">Start playing, friend!</p>
+        <div class="game-buttons-container">
+            <div class="row row1">
+                <div class="gamebutton top left disabled" title="green"></div>
+                <div class="gamebutton top right disabled" title="red"></div>
+            </div>            
+            <div class="row row2">
+                <div class="gamebutton bottom left disabled" title="yellow"></div>
+                <div class="gamebutton bottom right disabled" title="blue"></div>
+            </div>
+            <div id="playSimon" role="button">Play</div>
+        </div>
+        <span class="dark-mode-switch">Dark Mode</span>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <script src="app.js"></script>
+</body>
+</html>
