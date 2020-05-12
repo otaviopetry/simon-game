@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="app.css">
 
-    <title>otavio's Simon Game - Angela Yu's Web Dev Bootcamp</title>
+    <title>Simon Game by otaviopetry</title>
 </head>
 <body>
     
@@ -26,8 +26,19 @@
             </div>
             <div id="playSimon" role="button">Play</div>
         </div>
-        <span class="dark-mode-switch">Dark Mode</span>
+        <div class="switches">
+            <span class="dark-mode-switch switch">Dark Mode</span>
+            <span class="sound-switch switch">Turn sound off</span>
+        </div>
     </div>
+
+    <audio preload="auto">
+        <source src="sounds/blue2.wav" type="audio/wav">
+        <source src="sounds/green2.wav" type="audio/wav">
+        <source src="sounds/red2.wav" type="audio/wav">
+        <source src="sounds/yellow2.wav" type="audio/wav">
+        Seu browser não suporta elementos de áudio :\
+    </audio> 
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
