@@ -70,9 +70,6 @@ $(".gamebutton").click( function (btn) {
         playerSequence.push(btn.target.title);
         $("h1").text("Game over!");
         $(".game-buttons-container").animate({opacity: 0.5});
-        console.log("NOPE");
-        console.log(generatedSequence);
-        console.log(playerSequence);
     } else {
         if ( i === generatedSequence.length-1 ) {
             i = 0;
@@ -81,17 +78,11 @@ $(".gamebutton").click( function (btn) {
             }
             setTimeout( simonGame, 300);            
             playerSequence = [];
-            console.log("Correto");
-            console.log(generatedSequence);
-            console.log(playerSequence);
         } else {
             if ( soundOn ) {
                 makeSound(btn.target.title);
             }
             playerSequence.push(btn.target.title);         
-            console.log("Correto");
-            console.log(generatedSequence);
-            console.log(playerSequence);
             i++;     
         }
     }
